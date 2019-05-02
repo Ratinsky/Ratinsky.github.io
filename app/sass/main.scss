@@ -1,0 +1,18 @@
+/*---BASE---*/
+@import './base/_base.scss';
+
+/*---LAYOUTS---*/
+@import './layout/_style.scss';
+
+/*---HEADER---*/
+@import './layout/_header.scss';
+
+/*---MODULES---*/
+@import './modules/_banner.scss';
+@import './modules/_slider.scss';
+@import './modules/_timeline.scss';
+
+/*---FOOTER---*/
+@import './layout/_footer.scss';
+
+/*---OTHER_PAGES---*/

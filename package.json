@@ -1,0 +1,30 @@
+{
+  "name": "s-pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.1",
+    "gulp-cli": "^2.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/Ratinsky.git"
+  },
+  "author": "Artur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/Ratinsky/issues"
+  },
+  "homepage": "https://github.com/github.com/Ratinsky#readme"
+}

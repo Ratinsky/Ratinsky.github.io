@@ -1,0 +1,322 @@
+/* В общем-то, единственный костыльный блок в этом идеальном коде. Дизайн этого блока - тихий ад, извините */
+
+.slider {
+    background: url(../img/slider_background_rectangle.png) no-repeat 100%;
+    background-size: cover;
+    height: 500px;
+    margin-top: 47px;
+    position: relative;
+    @media(max-width: 1700px) {
+        height: 393px;
+    }
+    @media(max-width: 900px) {
+        background: url(../img/slider_background_rectangle.png) no-repeat 0%;
+    }
+    @media(max-width: 800px) {
+        background: url(../img/slider_background_rectangle.png) no-repeat 25%;
+    }
+    @media(max-width: 700px) {
+        height: 300px;
+    }
+    @media(max-width: 600px) {
+        height: 250px;
+    }
+    @media(max-width: 500px) {
+        height: 220px;
+        background: url(../img/slider_background_rectangle.png) no-repeat 50%;
+    }
+    @media(max-width: 420px) {
+        height: 200px;
+    }
+    @media(max-width: 340px) {
+        height: 220px;
+    }
+    .slider-content {
+        // padding: 70px 0px 60px 406px;
+        // width: 540px;
+        padding: 70px 0px 60px 600px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        @media(max-width: 1600px) {
+            padding: 70px 0px 60px 506px;
+        }
+        @media(max-width: 1430px) {
+            padding: 70px 0px 60px 406px;
+            width: 540px;
+        }
+        @media(max-width: 1330px) {
+            padding: 70px 0px 60px 306px;
+        }
+        @media(max-width: 1230px) {
+            padding: 70px 0px 60px 206px;
+        }
+        @media(max-width: 1130px) {
+            padding: 70px 0px 60px 106px;
+        }
+        @media(max-width: 1030px) {
+            width: 440px;
+        }
+        @media(max-width: 900px) {
+            padding: 70px 0px 60px 306px;
+        }
+        @media(max-width: 800px) {
+            padding: 70px 0px 60px 206px;
+        }
+        @media(max-width: 700px) {
+            padding: 70px 0px 60px 156px;
+        }
+        @media(max-width: 600px) {
+            padding: 30px 0px 60px 156px;
+            width: 340px;
+        }
+        @media(max-width: 500px) {
+            padding: 30px 0px 60px 106px;
+        }
+        @media(max-width: 460px) {
+            width: 290px;
+        }
+        @media(max-width: 420px) {
+            padding: 30px 0px 60px 76px;
+        }
+        @media(max-width: 340px) {
+            width: 220px;
+        }
+        .slider-content_quote {
+            position: relative;
+            &:before {
+                content: '';
+                background: url(../img/quotes.svg) no-repeat;
+                background-size: cover;
+                position: absolute;
+                height: 94px;
+                width: 140px;
+                opacity: 0.1;
+                left: -35%;
+                @media(max-width: 1130px) {
+                    height: 47px;
+                    width: 70px;
+                    left: -15%;
+                    top: 3%;
+                }
+                @media(max-width: 1030px) {
+                    left: -20%;
+                }
+                @media(max-width: 600px) {
+                    left: -25%;
+                }
+                @media(max-width: 460px) {
+                    left: -30%;
+                }
+                @media(max-width: 420px) {
+                    height: 24px;
+                    width: 40px;
+                    left: -18%;
+                }
+                @media(max-width: 340px) {
+                    left: -22%;
+                }
+            }
+        }
+        .slider-content_quote-text {
+            font-size: 16px;
+            font-family: "Cera";
+            color: rgba(255, 255, 255, 0.902);
+            line-height: 1.5; 
+            margin-bottom: 48px;
+            @media(max-width: 700px) {
+                font-size: 12px;
+                margin-bottom: 30px;
+            }
+            @media(max-width: 420px) {
+                font-size: 10px;
+            }
+            @media(max-width: 500px) {
+                margin-bottom: 10px;
+            }
+        }
+        .slider-content_author {
+            display: flex;
+            .slider-content_logo {
+                padding: 19px 24px;
+                border: 2px solid #1a1c37;
+                background-color: #000221;
+                border-radius: 36px;
+                margin-right: 28px;
+                width: 20px;
+                height: 30px;
+                @media(max-width: 500px) {
+                    padding: 14px 19px;
+                    margin-right: 14px;
+                }
+            }
+            .slider-content_author-quote {
+                font-size: 14px;
+                font-family: "Cera";
+                color: rgba(255, 255, 255, 0.722);
+                line-height: 1.429;
+                @media(max-width: 500px) {
+                    font-size: 12px;
+                }
+                @media(max-width: 340px) {
+                    font-size: 10px;
+                }
+                p {
+                    // @media(max-width: 500px) {
+                    //     margin-top: 5px;
+                    // }
+                    &:first-child {
+                        margin-top: 9px;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
+    }
+    .slider-pagination {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 11%;
+        left: 78%;
+        z-index: 999;
+        @media(max-width: 1850px) {
+            bottom: 12.2%;
+            left: 77.6%;
+        }
+        @media(max-width: 1800px) {
+            bottom: 13.2%;
+            left: 77.1%;
+        }
+        @media(max-width: 1750px) {
+            bottom: 14.2%;
+            left: 76.8%;
+        }
+        @media(max-width: 1700px) {
+            bottom: 5.8%;
+            left: 76.4%;
+        }
+        @media(max-width: 1650px) {
+            bottom: 6.8%;
+            left: 75.9%;
+        }
+        @media(max-width: 1600px) {
+            bottom: 8.7%;
+            left: 75.4%;
+        }
+        @media(max-width: 1550px) {
+            bottom: 9.8%;
+            left: 74.9%;
+        }
+        @media(max-width: 1500px) {
+            bottom: 11.3%;
+            left: 74.3%;
+        }
+        @media(max-width: 1450px) {
+            bottom: 12.2%;
+            left: 73.8%;
+        }
+        @media(max-width: 1400px) {
+            bottom: 13.5%;
+            left: 73.2%;
+        }
+        @media(max-width: 1366px) {
+            bottom: 14.7%;
+            left: 72.3%;
+        }
+        @media(max-width: 1300px) {
+            left: 71.2%;
+        }
+        @media(max-width: 1250px) {
+            left: 70.2%;
+        }
+        @media(max-width: 1200px) {
+            bottom: 14.6%;
+            left: 68.9%;
+        }
+        @media(max-width: 1150px) {
+            bottom: 14.7%;
+            left: 67.5%;
+        }
+        @media(max-width: 1100px) {
+            left: 66.1%;
+        }
+        @media(max-width: 1050px) {
+            left: 64.4%;
+        }
+        @media(max-width: 1024px) {
+            left: 63.5%;
+        }
+        @media(max-width: 992px) {
+            left: 62.3%;
+        }
+        @media(max-width: 950px) {
+            left: 60.6%;
+        }
+        @media(max-width: 900px) {
+            left: unset;
+            right: 0;
+        }
+        @media(max-width: 700px) {
+            bottom: 3.8%;
+        }
+        @media(max-width: 600px) {
+            bottom: 0%;
+        }
+        @media(max-width: 420px) {
+            right: 28%;
+        }
+        @media(max-width: 360px) {
+            right: 23%;
+        }
+        .slider-pagination_text {
+                font-size: 12px;
+                font-family: "Brown";
+                color: rgba(255, 255, 255, 0.502);
+                font-weight: bold;
+                line-height: 2;
+                margin: 0px 20px 0px 15px;
+                user-select: none;
+                width: 36px;
+            span {
+                color: rgb(255, 255, 255);
+            }
+        }
+        .slider-pagination_arrow  {
+            width: 80px;
+            height: 48px;
+            background-color: #041132;
+            transform: skew(45deg);
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            cursor: pointer;
+            transition: 0.5s;
+            @media(max-width: 900px) {
+                transform: none;
+            }
+            @media(max-width: 600px) {
+                width: 50px;
+                height: 34px;
+            }
+            @media(max-width: 420px) {
+                width: 50px;
+                height: 24px;
+            }
+            &:hover {
+                background-color: #2998cc;
+                svg {
+                    color: #ffffff;
+                }
+            }
+            svg {
+                color: #b4b8c2;
+                transform: skew(-43deg);
+                @media(max-width: 900px) {
+                    transform: none;
+                }
+            }
+        }
+    }
+}
